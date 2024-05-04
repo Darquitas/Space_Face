@@ -1,0 +1,154 @@
+/* Estilos para el cuerpo del documento */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.93)); /* Degradado de color blanco a tu color */
+    color: #000000; /* Color del texto */
+}
+
+/* Estilos para el footer */
+footer {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(112, 0, 187, 0.35)); /* Degradado de color blanco a tu color */
+    clip-path: polygon(0 0, 5% 3%, 10% 5%, 15% 3%, 20% 0, 25% 3%, 30% 5%, 35% 3%, 40% 0, 45% 3%, 50% 5%, 55% 3%, 60% 0, 65% 3%, 70% 5%, 75% 3%, 80% 0, 85% 3%, 90% 5%, 95% 3%, 100% 0, 100% 100%, 0 100%); /* Clip-path */
+    padding: 50px 0; /* Ajuste de relleno */
+    margin-top: -50px; /* Desplazar el footer hacia arriba para que se superponga al contenido */
+    text-align: center;
+}
+
+/* Estilos para el contenido del footer */
+footer p {
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilos para el encabezado */
+header {
+    padding: 10px 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(112, 0, 187, 0.35)); /* Degradado de color blanco a tu color */
+    font-family: monospace; 
+    font-size: 25px;
+    letter-spacing: 10px;
+    
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Estilos para la sección izquierda de la barra de navegación */
+.left-section {
+    display: flex;
+    align-items: center;
+    color-scheme: #fff;
+
+}
+
+.left-section img {
+    width: 80px; /* Tamaño del logo */
+    height: auto; /* Para mantener la proporción */
+    margin-right: 20px;
+}
+
+.left-section span {
+    color: #fff; /* Color del texto del nombre */
+    font-weight: bold;
+}
+
+/* Estilos para la sección derecha de la barra de navegación */
+.right-section button {
+    background-color: transparent;
+    border: none;
+    color: #fff; /* Color del texto de los botones */
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0; /* Ajuste para que no haya espacio adicional alrededor de los iconos */
+    border-radius: 5px;
+}
+
+.right-section button:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(112, 0, 187, 0.35)); /* Degradado de color blanco a tu color */
+    transform: scale(1.5);
+    transition: all linear 0.3s;
+
+}
+
+.right-section button img {
+    width: 30px; /* Tamaño de los iconos */
+    height: auto; /* Para mantener la proporción */
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+    color: #171717;
+    flex-grow: 0; /* Permite que la barra de búsqueda ocupe todo el espacio restante */
+    margin-right: 10px; /* Espacio entre la barra de búsqueda y los iconos */
+    display: flex; /* Usa el modelo de caja flexible */
+    align-items: center; /* Alinea verticalmente los elementos */
+    
+}
+
+.search-bar img {
+    cursor: pointer;
+    width: 20px; /* Tamaño del icono de búsqueda */
+    height: auto; /* Para mantener la proporción */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.search-bar input {
+    margin-right:  20px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 8px; /* Ajuste del espaciado interno */
+    border-radius: 15px; /* Bordes redondeados más pronunciados */
+    border: 1px solid #ffffff; /* Borde gris */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo ligeramente transparente */
+    color: #000000; /* Color del texto */
+    font-size: 20px; /* Tamaño de fuente */
+    outline: none; /* Eliminar el contorno al hacer clic */
+}
+
+/* Estilos al enfocar el input */
+.search-bar input:focus {
+    border-color: #fff; /* Cambiar el color del borde al enfocar */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo ligeramente transparente al enfocar */
+}
+
+/* Estilo para ocultar el campo de entrada de texto inicialmente */
+#search-input {
+    display: none;
+}
+
+/* Estilo para mostrar el campo de entrada de texto cuando se hace clic en el icono de búsqueda */
+#search-input.show {
+    display: inline-block;
+}
+
+.main {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-img{
+    width: 100%;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.container-img img {
+    width: 100%;
+}
+.pinkh{ 
+    color: rgb(255, 255, 255);
+    font-family: 'Optima',fantasy;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0,9 );
+    letter-spacing: 10px;
+    font-size: 45px;
+    margin-left: 12px;
+}

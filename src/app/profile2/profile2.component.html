@@ -1,0 +1,42 @@
+<body>
+    <header>
+        <nav>
+            <div class="left-section">
+                <a><img src="../../assets/imagenes/profile_icon.png" alt="Aca debe ir la imagen del perfil"></a>
+                <span>Aca va el nombre del Perfil</span>
+            </div>
+            <div class="right-section">
+                <a href="/profile"><button class="principal-profile-button"><img src="../../assets/imagenes/profile_icon.png" alt=""></button></a>
+                <a href="/home"><button class="home-button"><img src="../../assets/imagenes/home_icon.png" alt=""></button></a>
+                <a href="/messages"><button class="messages-button"><img src="../../assets/imagenes/messages_icon.png" alt="Icono de Mensajes"></button></a>
+                <button class="logout-button"><img src="../../assets/imagenes/logOut_icon.png" alt="Cerrar Sesión" id="logout-button"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Mi galeria</h1>
+        <div class="info">
+            <div class="info-item">
+                <img src="../../assets/imagenes/add_friend_icon.png" alt="Ícono de solicitudes">
+                <span>Solicitudes</span>
+            </div>
+            <div class="info-item">
+                <img src="../../assets/imagenes/cantidad_publicaciones_icon.png" alt="Ícono de cantidad de publicaciones">
+                <span>Publicaciones</span>
+            </div>
+            <div class="info-item">
+                <img src="../../assets/imagenes/friends_icon.png" alt="Ícono de amigos">
+                <span>Amigos</span>
+            </div>
+        </div>
+        <input type="file" name="img" id="file-input" multiple>
+        <button id="file-select-button">Elegir foto</button><span>No has subido ninguna foto? Sube una aqui</span>
+
+        <button id="upload-button">Subir foto</button>
+
+        <div class="selected.files-container">
+            <span>Archivos a subir</span>
+            <span class="selected-files"></span>
+        </div>
+    </main>
+</body>

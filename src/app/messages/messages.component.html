@@ -1,0 +1,43 @@
+
+<body class="messages-body">
+    <header>
+        <nav>
+            <div class="left-section">
+                <a><img data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" src="../../assets/imagenes/messages_icon.png"></a>
+                <span> <i class="fa-regular fa-comment"></i> Mensajería</span>
+            </div>
+            <div class="right-section">
+                <a routerLink="/home"><button class="home-button"><img src="../../assets/imagenes/home_icon.png" alt=""></button></a>
+                <button class="logout-button"><img src="../../assets/imagenes/logOut_icon.png" alt="Cerrar Sesión" id="logout-button"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="inbox">
+            <div class="message">
+                <div class="message-header">
+                    <span class="sender">Juan Perez</span>
+                    <span class="date">Hoy</span>
+                    <span class="notification">Nuevo</span> <!-- Notificación de mensaje no leído -->
+                </div>
+                <div class="message-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="message-header">
+                    <span class="sender">María González</span>
+                    <span class="date">Ayer</span>
+                    <span class="notification">Visto por ti</span> <!-- Notificación de mensaje visto por ti -->
+                </div>
+                <div class="message-content">
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <!-- Más mensajes aquí -->
+        </section>
+    </main>
+    <i class="fa-solid fa-rocket"></i>
+</body>

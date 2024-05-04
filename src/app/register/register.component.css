@@ -1,0 +1,143 @@
+.signupbox {
+    background-image: url('../../assets/imagenes/mora.jpg');
+    border: 1px ;
+    box-shadow: 
+        20px 20px 20px rgba(0, 0, 0, 0.3), /* Sombra hacia la derecha y abajo */
+        -20px -20px 20px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ .signup{
+    background: rgb(255, 255, 255);
+    width: 220px;
+    height: 250px;
+    margin: 0 auto;
+    margin-right: 50px;
+    text-align: center;
+    font-family: 'Optima';
+    margin-top: 0px;
+}
+
+.signupbtn {
+    
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+        
+ 
+}
+
+.register-container{
+    background-image: url('../../assets/imagenes/mora2.jpg');
+    /* Ajusta la imagen de fondo según sea necesario */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+
+.pinkh {
+    color: rgb(255, 255, 255);
+    font-family: 'Optima',fantasy;
+    text-align: left;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 7px;
+    font-size: 55px;
+    margin-left: 120px;
+    padding-top: 17px;
+    
+}
+
+.pink {
+    color: rgb(255, 255, 255);
+    font-family: 'Optima';
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-left: 40px;
+    padding-top: -30px;
+    display: block;
+    
+}
+
+.inputt {
+    border-radius: 8px;
+}
+
+.inputtf {
+    border-radius: 8px;
+    text-align: right;
+}
+
+.normaletter {
+    text-align: left;
+    font-family: 'Optima';
+    font-size: 15px;
+    letter-spacing: 0px;
+    padding-top: -10px;
+    margin-right: 5px; 
+
+}
+
+.normaletterf {
+    text-align: left;
+    font-family: 'Optima';
+    font-size: 15px;
+    letter-spacing: 0px;
+    padding-top: -10px;
+    margin-right: 7.5px; 
+
+}
+
+.row {
+    display: flex; 
+    align-items: center; 
+}
+
+.rowf {
+    display: flex; 
+    align-items: center; 
+    margin-left: 15px;
+}
+
+.redirectt{
+    text-align: right;
+    font-family: 'Optima';
+    font-size: 15px;
+    text-decoration: none; 
+}
+
+.pink-rocket {
+    color: #5E5DF0; 
+}
+
+.pink-candles {
+    color: #d783c5; 
+    margin-right: 5px;
+}
+

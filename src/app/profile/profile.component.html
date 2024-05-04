@@ -1,0 +1,50 @@
+<body>
+    <header>
+        <nav>
+            <div class="left-section">
+                <a><img src="" alt=""></a>
+                <span>Velez_17</span>
+            </div>
+            <div class="right-section">
+                <a href="/profile2"><button class="profile2-button" data-tooltip="Perfil de publicaciones"><img src="../../assets/imagenes/profile2_icon.png" alt=""></button></a>
+                <a href="/home"><button class="home-button" data-tooltip="Inicio"><img src="../../assets/imagenes/home_icon.png" alt=""></button></a>
+                <a href="/messages"><button class="messages-button" data-tooltip="Mensajes"><img src="../../assets/imagenes/messages_icon.png" alt="Icono de Mensajes"></button></a>
+                <button class="logout-button" data-tooltip="Cerrar Sesión"><img src="../../assets/imagenes/logOut_icon.png" alt="Cerrar Sesión" id="logout-button"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Mi galeria <i class="fa-solid fa-images"></i></h1> 
+        
+        <div class="info">
+            <div class="info-item" data-tooltip="Solicitudes">
+                <img src="../../assets/imagenes/add_friend_icon.png" alt="Ícono de solicitudes">
+                <span>4</span>
+            </div>
+            <div class="info-item" data-tooltip="Publicaciones">
+                <img src="../../assets/imagenes/cantidad_publicaciones_icon.png" alt="Ícono de cantidad de publicaciones">
+                <span>6</span>
+            </div>
+            <div class="info-item" data-tooltip="Amigos">
+                <img src="../../assets/imagenes/friends_icon.png" alt="Ícono de amigos">
+                <span>1</span>
+            </div>
+        </div>
+        <div class="mainCont_grid">
+            @for(post of this.posts; track post.id){
+                <div>
+                    <div>
+                        <img [src]="post.imageSrc">
+                        <ul>
+                        @for(comment of post.comments; track $index){
+                          <li>{{comment}}</li>
+                        }
+                    </ul>
+                </div>
+                    <input class="input-comment" type="text" #comment placeholder="Agrega Comentario">
+                    <button class="button-comment" click="addComment(post.id, comment.value)">Enviar</button>
+                </div>
+              }
+        </div>
+    </main>
+</body>
