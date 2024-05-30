@@ -252,5 +252,39 @@ button span {
 }
 
 
+/* Estilos para los botones de subir foto */
+#file-select-button,
+#upload-button {
+    margin-top: 20px;
+    background-color: #5b21ac;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#file-select-button:hover,
+#upload-button:hover {
+    background-color: #4a148c;
+}
+
+/* Estilos para el contenedor de los archivos seleccionados */
+.selected-files-container {
+    margin-top: 20px;
+}
+
+.selected-files-container span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para la previsualización de la imagen subida */
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
 
 

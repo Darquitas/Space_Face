@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommentService } from '../comment.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-profile',
@@ -31,6 +32,11 @@ export class ProfileComponent implements OnInit {
     this.commentService.addComment(id, text);
     // Lógica adicional después de agregar un comentario, si es necesario
   }
+
+  displayDescription = '';
+  submitDescription(formValue: { description: string }) {
+    this.displayDescription = formValue.description;
+}
 
 
 }

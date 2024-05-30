@@ -29,14 +29,21 @@
                 <span>Amigos</span>
             </div>
         </div>
-        <input type="file" name="img" id="file-input" multiple>
-        <button id="file-select-button">Elegir foto</button><span>No has subido ninguna foto? Sube una aqui</span>
-
+        
+        <input type="file" id="file-input" (change)="onFileSelected($event)" multiple hidden>
+        <button id="file-select-button" (click)="triggerFileInput()">Elegir foto</button>
+        <span>No has subido ninguna foto? Sube una aqui</span>
         <button id="upload-button">Subir foto</button>
 
-        <div class="selected.files-container">
+        <div class="selected-files-container">
             <span>Archivos a subir</span>
             <span class="selected-files"></span>
+        </div>
+
+        <div *ngIf="images.length > 0" class="image-preview">
+            <div *ngFor="let img of images">
+                <img [src]="img" alt="Imagen subida" style="margin-top: 20px; max-width: 100%; height: auto;">
+            </div>
         </div>
     </main>
 </body>
